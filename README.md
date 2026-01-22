@@ -31,3 +31,18 @@ To successfully run this pipeline, ensure your environment meets the following c
     * [cite_start]`sqlite3` (Standard library for database connection) 
     * [cite_start]`logging` (Standard library for tracking execution) 
     * [cite_start]`glob`, `os`, `pathlib` (Standard libraries for file handling) 
+
+## 📦 Setup & Installation
+
+**Note:** This repository contains the source code for the ETL pipeline. The raw data files and the generated SQLite database file are **not included** due to size restrictions. You must generate the database locally by following these steps.
+
+### 1. Prepare the Data
+1.  Download the dataset (e.g., from Kaggle or your source).
+2.  Place the CSV files into the `dataset/` folder in the project root.
+    * *Ensure the folder contains:* `dataset/olist_orders_dataset.csv`, `dataset/olist_customers_dataset.csv`, etc.
+
+### 2. Create the Database Schema
+The repository includes an SQL script to generate the empty database schema with all necessary tables and relationships. Run this command in your terminal:
+
+```bash
+sqlite3 olist_db < sql/SQL_script.sql
