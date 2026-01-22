@@ -31,7 +31,3 @@ To successfully run this pipeline, ensure your environment meets the following c
     * [cite_start]`sqlite3` (Standard library for database connection) 
     * [cite_start]`logging` (Standard library for tracking execution) 
     * [cite_start]`glob`, `os`, `pathlib` (Standard libraries for file handling) 
-
-To install the required external library, run:
-```bash
-pip install pandas
