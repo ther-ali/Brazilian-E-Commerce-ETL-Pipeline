@@ -1,5 +1,0 @@
-Scheduling (Automation)
-The ETL script is scheduled to run automatically via crontab.
-The following entry executes the ETL every minute:
-
-*/1 * * * * /home/thar/Desktop/Earthlink_assi/venv/bin/python /home/thar/Desktop/Earthlink_assi/ETL_pipeline.py
