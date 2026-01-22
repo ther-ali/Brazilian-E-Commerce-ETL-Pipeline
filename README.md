@@ -31,17 +31,6 @@ To successfully run this pipeline, ensure your environment meets the following c
     * [cite_start]`sqlite3` (Standard library for database connection) 
     * [cite_start]`logging` (Standard library for tracking execution) 
     * [cite_start]`glob`, `os`, `pathlib` (Standard libraries for file handling)
- 
-.
-├── dataset/                     # Source CSV files
-├── python/
-│   └── ETL_pipeline.py          # Main Python script
-├── sql/
-│   └── SQL_script.sql           # SQL Schema definition
-├── scheduler/
-│   └── schedule_steps.txt       # Scheduling documentation
-├── ETL_log.log                  # Execution logs
-└── olist_db                     # Target SQLite Database
 
 
 ## 📦 Setup & Installation
