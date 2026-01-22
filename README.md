@@ -1,6 +1,6 @@
-# Brazilian E-Commerce ETL Pipeline
+# Brazilian E-Commerce ETL Data Pipeline
 
-This project implements an **Extract, Transform, Load (ETL)** data engineering pipeline for the **Brazilian E-Commerce Public Dataset by Olist**. Ideally suited for Linux environments, this project processes over 100k anonymized order records, normalizes the data, and loads it into a relational SQLite database.
+This project implements a robust **Extract, Transform, Load (ETL)** pipeline for the Olist Brazilian E-Commerce dataset. Designed for Linux-based environments, it processes over 100k anonymized order records, normalizes them, and warehouses them into a relational SQLite database.
 
 ## 📖 Dataset Description
 
@@ -19,18 +19,19 @@ This dataset contains information on 100k orders from 2016 to 2018 made at multi
 
 ---
 
-## 📂 Project Structure
+## ✅ Requirements
 
-The project is organized into the following directory structure:
+To successfully run this pipeline, ensure your environment meets the following criteria:
 
-```text
-.
-├── dataset/                     # Directory for source CSV files
-├── python/
-│   └── etl_pipeline.py          # Python script for extraction and loading 
-├── sql/
-│   └── db_creation.sql          # SQL script for database schema and DDL 
-├── scheduler/
-│   └── schedule_steps.txt       # Instructions for automating the job via Cron
-├── ETL_log.log                  # Execution logs 
-└── olist_db                     # Target SQLite database
+* [cite_start]**Operating System:** Linux-based system (Ubuntu, Debian, CentOS, etc.) 
+* **Python:** Version 3.x
+* **Database:** SQLite3 (Pre-installed on most Linux distros)
+* **Python Libraries:**
+    * [cite_start]`pandas` (For data manipulation) 
+    * [cite_start]`sqlite3` (Standard library for database connection) 
+    * [cite_start]`logging` (Standard library for tracking execution) 
+    * [cite_start]`glob`, `os`, `pathlib` (Standard libraries for file handling) 
+
+To install the required external library, run:
+```bash
+pip install pandas
